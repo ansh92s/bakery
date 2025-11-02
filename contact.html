@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- D -->
+<!-- O -->
+<!-- N -->
+<!-- E -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Haven Bakery | Contact Us</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fff8f6;
+      margin: 0;
+      color: #5a3e2b;
+    }
+
+    header {
+      background-color: #ffc1d6;
+      /* text-align: center; */
+      display: flex;
+      top: 0;
+      height: 69px;
+      padding: 10px 0 0px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    button{
+        font-size: 1.5rem;
+        margin-right: 550px;
+        padding: 5px 15px;
+        border: none;
+        width: 60px;
+        margin-left: 10px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #ffb3c690;
+        color: #4b2e05;
+        cursor: pointer;
+    }
+    header h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 1.7rem;
+      color: #5b2a0d;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #663300;
+      margin-top: 5px;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px 5%;
+    }
+
+    .contact-form
+    {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1 1 350px;
+      width: 300px;
+
+    } 
+    .contact-info {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1 1 350px;
+      max-width: 500px;
+    }
+
+    .contact-form h2, .contact-info h2 {
+      color: #b3015a;
+      margin-bottom: 15px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #d4b5a3;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: none;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #b3015a;
+      box-shadow: 0 0 5px rgba(179, 1, 90, 0.3);
+    }
+
+    .contact-form button {
+      background-color: #b3015a;
+      color: #fff;
+      border: none;
+      width: 95%;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        color: #000;
+      background-color: #ff4f9bbc;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .map-container {
+      margin-top: 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ffe3ec;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #4b2e05;
+    }
+
+    @media screen and (max-width: 425px) {
+
+    
+    header {
+      display: flex;
+      flex-direction: row;
+      position: sticky;
+        /* top: 0; */
+        width: 100%;
+      z-index: 100;
+      height: 10px;
+      background-color: #ffb3c6;
+      /* gap: 55px; */
+      /* text-align: center; */
+      justify-content: space-between;
+      padding: 30px 0;
+      padding-top: 10px ;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    header h1 {
+      font-size: 0.8rem;
+      text-align: right;
+      margin: 0px;
+      color: #4b2e05;
+    }
+
+    button{
+        margin-right: 30px;
+        margin-top: 0px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        /* height: 10px; */
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        background-color: #e0063d60;
+        color: #4b2e05;
+    }
+
+
+    header p {
+      font-size: 1.1rem;
+      color: #663300;
+      margin-top: 5px;
+    }
+
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 5%;
+      }
+      .contact-form
+    {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1 1 350px;
+      width: 220px;
+    }
+
+    .contact-form button {
+      background-color: #b3015a;
+      color: #fff;
+      border: none;
+      width: 220px;
+      padding: 12px;
+      margin-right: 20px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        color: #000;
+      background-color: #ff4f9bbc;
+        
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <button><</button>
+    </a>
+    <h1>Sweet Haven Bakery<br>We’d Love to Hear From You!</h1>
+  </header>
+
+  <section class="contact-section">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="20" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Visit Us</h2>
+      <p><strong>Address:</strong><br> 123 Sweet Street, Pastry Town, CA 90210</p>
+      <p><strong>Phone:</strong><br> 12345-67890</p>
+      <p><strong>Email:</strong><br> cr@thecremeco.com</p>
+      <p><strong>Hours:</strong><br> Mon–Sat: 8am – 7pm<br>Sun: 9am – 5pm</p>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019777134847!2d-122.42067908468177!3d37.774929779759774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b8e7e0c3b%3A0x8f2e0f4db715dd4a!2sBakery!5e0!3m2!1sen!2sus!4v1617640982133!5m2!1sen!2sus" 
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Sweet Haven Bakery — Made with Love & Butter 💕
+  </footer>
+</body>
+</html>

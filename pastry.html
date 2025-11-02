@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- D -->
+<!-- O -->
+<!-- N -->
+<!-- E -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Haven Bakery | Pastry Menu</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fff8f6;
+      margin: 0;
+      color: #5a3e2b;
+    }
+
+    header {
+        display: flex;
+      background-color: #ffb3c6;
+      position: fixed;
+        top: 0;
+        width: 100%;
+      z-index: 100;
+        height: 50px;
+      gap: 20px;
+      text-align: center;
+      padding-bottom: 20px;
+        padding-top: 10px ;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      text-align: right;
+      margin: 0;
+      margin-left: 400px;
+      color: #4b2e05;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #663300;
+      margin-top: 5px;
+    }
+
+    .menu-section {
+      padding: 50px 5%;
+        margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .pastry-card {
+      background-color: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .pastry-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(255, 0, 128, 0.25);
+    }
+
+    .pastry-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .pastry-card h3 {
+      margin: 15px 0 8px;
+      font-size: 1.3rem;
+      color: #b3015a;
+    }
+
+
+    button{
+        font-size: 1.5rem;
+        margin-right: 550px;
+        margin-left: 10px;
+        padding: 5px 15px;
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #e0063d60;
+        color: #4b2e05;
+        cursor: pointer;
+    }
+    
+    .pastry-card p {
+      font-size: 0.95rem;
+      margin: 0 15px 15px;
+      color: #7a5a44;
+    }
+
+    .price {
+      background-color: #ffb3c6;
+      color: #4b2e05;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ffe3ec;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #4b2e05;
+    }
+
+    @media (max-width: 600px) {
+    
+    header {
+      display: flex;
+      flex-direction: row;
+      position: sticky;
+        /* top: 0; */
+        width: 100%;
+      z-index: 100;
+      height: 10px;
+      background-color: #ffb3c6;
+      gap: 55px;
+      justify-content: space-between;
+      /* text-align: center; */
+      padding: 30px 0;
+      padding-top: 10px ;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    header h1 {
+      font-size: 0.8rem;
+      margin-right: 5px;
+      /* text-align: right; */
+      margin: 0px;
+      color: #4b2e05;
+    }
+
+    button{
+        margin-right: 30px;
+        margin-top: 0px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        /* height: 10px; */
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        background-color: #e0063d60;
+        color: #4b2e05;
+    }
+
+    .menu-section {
+      grid-template-columns: 1fr;
+      padding: 20px 5%;
+      margin-top: 20px;
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+
+    <a href="index.html">
+        <button><</button>
+    </a>
+    <h1>Sweet Haven Bakery<br>Our Freshly Baked Pastries</h1>
+    <!-- <p>Our Freshly Baked Pastries</p> -->
+  </header>
+
+  <section class="menu-section">
+    <div class="pastry-card">
+      <img src="Perfect Your Homemade Flaky Butter Croissants Today!.jpg" alt="Croissant">
+      <h3>Butter Croissant</h3>
+      <p>Flaky, golden, and irresistibly buttery layers baked to perfection.</p>
+      <br><div class="price">$3.50</div>
+    </div>
+
+    <div class="pastry-card">
+      <img src="Summer Fruit Tart Recipe.jpg" alt="Danish Pastry">
+      <h3>Fruit Danish</h3>
+      <p>Sweet pastry topped with creamy custard and fresh seasonal fruits.</p>
+      <br><div class="price">$4.00</div>
+    </div>
+
+    <div class="pastry-card">
+      <img src="Brown Butter Cinnamon Rolls.jpg" alt="Cinnamon Roll">
+      <h3>Cinnamon Roll</h3>
+      <p>Soft, swirled dough with cinnamon sugar and a drizzle of vanilla glaze.</p>
+      <br><div class="price">$4.50</div>
+    </div>
+
+    <div class="pastry-card">
+      <img src="Eclairs covered with chocolate glaze and filled with pastry cream_.jpg" alt="Éclair">
+      <h3>Chocolate Éclair</h3>
+      <p>Light choux pastry filled with cream and topped with dark chocolate.</p>
+      <br><div class="price">$5.00</div>
+    </div>
+
+    <div class="pastry-card">
+      <img src="Apple Strudel_ A Warm Winter Classic.jpg" alt="Apple Strudel">
+      <h3>Apple Strudel</h3>
+      <p>Warm spiced apples wrapped in crispy pastry, dusted with powdered sugar.</p>
+      <br><div class="price">$4.75</div>
+    </div>
+
+    <div class="pastry-card">
+      <img src="Golden Vanilla Cream Puffs_ A Delightful Recipe to Try!.jpg" alt="Cream Puff">
+      <h3>Cream Puff</h3>
+      <p>Delicate pastry shell filled with smooth whipped cream and vanilla.</p>
+      <br><div class="price">$3.75</div>
+    </div>
+
+    <div class="pastry-card">
+        <img src="Homemade Greek Baklava with Walnuts and Pistachios.jpg" alt="Baklava">
+        <h3>Baklava</h3>
+        <p>Layers of flaky pastry with nuts and honey syrup for a sweet crunch.</p>
+        <br><div class="price">$5.25</div>
+    </div>
+
+    <div class="pastry-card">
+        <img src="Gluten-Free Gourmet Churros with Rich Dark Chocolate Sauce.jpg" alt="Churros">
+        <h3>Churros</h3>
+        <p>Crispy fried dough sticks coated in cinnamon sugar, served with chocolate dip.</p>
+        <div class="price">$4.00</div>
+    </div>
+    <div class="pastry-card">
+        <img src="No-Bake Lemon Tart_ Irresistibly Tangy & Refreshing Dessert!.jpg" alt="Tart">
+        <h3>Lemon Tart</h3>
+        <p>Buttery crust filled with tangy lemon curd and topped with fresh berries.</p>
+        <br><div class="price">$6.00</div>
+    </div>
+    <div class="pastry-card">
+        <img src="Delicious Homemade Cinnamon Twists with Puff Pastry - Recipes by Lena.jpg" alt="Puff Pastry">
+        <h3>Puff Pastry Twists</h3>
+        <p>Light and airy pastry twists with a hint of cheese and herbs.</p>
+        <br><div class="price">$3.25</div>
+    </div>
+
+
+
+
+  </section>
+
+  <footer>
+    © 2025 Sweet Haven Bakery — Handcrafted Pastries Made Fresh Daily
+  </footer>
+</body>
+</html>
